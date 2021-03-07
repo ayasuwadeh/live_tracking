@@ -21,7 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-
+  provider: ^4.3.3
   google_maps_flutter: ^0.5.30
   geolocator: ^6.2.0
   flutter_svg: ^0.18.0
@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dev_dependencies:
+
   flutter_test:
     sdk: flutter
 
