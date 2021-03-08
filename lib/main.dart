@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         home:Consumer<Position>(
           builder: (context, position, widget) {
             return (position != null)
-                ? Map(initialPosition: position)
+                ? LiveMap(initialPosition: position)
                 : Center(child: CircularProgressIndicator());
           },
         ),

@@ -5,12 +5,12 @@ class GeolocatorService {
 
   Stream<Position> getCurrentLocation(){
     return Geolocator.getPositionStream(
-      desiredAccuracy: LocationAccuracy.high,
-      distanceFilter: 10,
+      desiredAccuracy: LocationAccuracy.best,
+      distanceFilter: 1,
     );
   }
 
   Future<Position> getInitialLocation() async {
-    return Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+    return Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
   }
 }
